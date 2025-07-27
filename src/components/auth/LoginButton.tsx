@@ -10,6 +10,7 @@ export default function LoginButton() {
       provider: 'azure',
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
+        scopes: 'email',
       },
     })
 
