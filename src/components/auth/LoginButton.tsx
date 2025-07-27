@@ -10,7 +10,7 @@ export default function LoginButton() {
       provider: 'azure',
       options: {
         redirectTo: `${window.location.origin}/auth/callback`,
-        scopes: 'email',
+        scopes: 'email openid profile https://graph.microsoft.com/Mail.Read',
       },
     })
 
